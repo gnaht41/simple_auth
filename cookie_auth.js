@@ -8,6 +8,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
+app.use(express.urlencoded({ extended: true }));
 
 // Connect to MongoDB
 mongoose.connect("mongodb://127.0.0.1:27017/cookieApp")
@@ -24,7 +25,7 @@ const cookieSchema = new mongoose.Schema({
 const Cookie = mongoose.model("Cookie", cookieSchema);
 
 // Dummy User (for demo)
-const USERS = [{ id: "1", username: "admin", password: "12345", rolename:"adsys"}];
+const USERS = [{ id: "1", username: "admin", password: "12345", rolename: "adsys" }];
 
 // --- Routes ---
 // Login → set cookie
