@@ -17,6 +17,9 @@ Chạy các ví dụ auth đơn giản bằng Node.js + Express.
 
 ![alt text](image-1.png)
 
+![alt text](image-2.png)
+
+![alt text](image-3.png)
 # hoặc:
 node cookie_auth.js # ví dụ Cookie (nếu được yêu cầu)
 - POST http://localhost:3001/login
