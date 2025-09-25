@@ -1,11 +1,14 @@
 // server.js
 const express = require("express");
+const path = require("path");
+
 const app = express();
 
 // Hardcoded username and password for demo
 const USERNAME = "admin";
 const PASSWORD = "12345";
 
+app.use(express.static(path.join(__dirname, "public")));
 // Middleware for basic authentication
 function basicAuth(req, res, next) {
   const authHeader = req.headers["authorization"];
