@@ -17,6 +17,9 @@
 - /login
 ![alt text](public/images/image-3.png)
 
+- cookie in postman
+![alt text](public/images/image-8.png)
+
 - database
 ![alt text](public/images/image-4.png)
 
